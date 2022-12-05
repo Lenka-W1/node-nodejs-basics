@@ -1,5 +1,10 @@
+import * as fs from 'fs';
+import { stdin } from 'process';
+
+const stream = fs.createWriteStream('src/streams/files/fileToWrite.txt', 'utf8');
+
 const write = async () => {
-    // Write your code here 
+  stdin.pipe(stream);
 };
 
 await write();
