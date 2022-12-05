@@ -11,7 +11,7 @@ const list = async () => {
     }
   }
   catch {
-    throw new Error('FS operation failed')
+    throw new Error('FS operation failed');
   }
 };
 
